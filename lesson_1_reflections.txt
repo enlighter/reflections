@@ -1,0 +1,37 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    It pinpointed the differences in the new file from the older file, and since the older file was working, some error must have been there in the changes in the new file. The output of diff was more precise and to the point and of managable size, so was easier was to find the error in.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    It saves the entire progression of changes for better retrospection. Also it becomes much easier to explore changes in a certain direction and return back to a stabler old version if it doesn't work out. Also it makes it much easier to recover from unexpected errors or check mistakes in newer versions compared to earlier ones.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Manually committing has the advantage of the judgement of a sentient being as a human, but also with all the pesky drawbacks of humans too. For effective committing, requires user effort in cultivating some good habits regarding commiting.
+    Softwares are slaves of the logic built into them and can't do anything more or less.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Codes can be modular. Modular projects are more easier to change and maintain. The modules will be interconnected and this interconnection is very important to the functioning of the project, thus it is imperative to allow tracking multiple files for effective version control in coding.
+    Google Docs is basically ment to store, edit and manage standalone documents for an enterprise environment across the users.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    <git log> give a complete commit history, and <git log --stat> gives commit history with change statistics
+
+    git diff <commit_id1> <commit_id2> gives the diff between the two specified commits made
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Knowing that we can revert bak to a previous state if something goes wrong in the next version lowers the risk associated with making the change. Thus one would be more confident to make changes that could break something, with version control.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Go crazy!!
