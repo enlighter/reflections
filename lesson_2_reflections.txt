@@ -1,0 +1,8 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+	I think it creates an initial metadata about folder stats n characteristics so that it can create an effective repository from the initialized folder.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+	Staging area is an intermediary stage between the status of the working directory and that of the repository.
+	It allows us greater control n flexibility in creating a repo. It is like having stage rehearsals before a live play on stage. Allows us to optimize the repo according to needs before actually filing it.
