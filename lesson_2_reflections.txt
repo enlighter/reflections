@@ -6,3 +6,7 @@ How is the staging area different from the working directory and the repository?
 
 	Staging area is an intermediary stage between the status of the working directory and that of the repository.
 	It allows us greater control n flexibility in creating a repo. It is like having stage rehearsals before a live play on stage. Allows us to optimize the repo according to needs before actually filing it.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+	Use 'git diff' and 'git diff --staged' to see what changes are going to be committed by the current staging area. Ensure that there is only one commit per logical change in the staging area.
