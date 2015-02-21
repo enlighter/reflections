@@ -10,3 +10,7 @@ How is the staging area different from the working directory and the repository?
 How can you use the staging area to make sure you have one commit per logical change?
 
 	Use 'git diff' and 'git diff --staged' to see what changes are going to be committed by the current staging area. Ensure that there is only one commit per logical change in the staging area.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+	Branches are helpful when i want to maintain the present project track, but also want to explore some strategic chnages in the project. Branches would allow me to explore both tracks without giving any up.
