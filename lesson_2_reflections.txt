@@ -21,4 +21,5 @@ How do the diagrams help you visualize the branch structure?
 
 What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 
-	Merging two branches together replaces the merging branches with a single branch containing the combined changes made by the parent branches. We represent it that way because the merge commit has the last commit from both the merging branches as parents.
+	Merging two branches together creates a single branch (current checkout branch) containing the combined changes made by the parent branches. We represent it that way because the merge commit has the last commit from both the merging branches as parents.
+

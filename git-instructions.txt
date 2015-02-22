@@ -1,0 +1,29 @@
+To add new files/changes within an git repository folder:
+
+- git add .  [adds everything in the current folder n its subdirectories]
+or
+- git add .<path to file to be added>
+
+- after add do - git commit -> then editor opens in which you add comment and save it
+or
+- git commit -m "<the comment>"
+
+- git push -u origin master
+	enter the login and pass for git account, -u being upstream mode
+
+- git config --global color.ui default
+	gives a color diff
+
+- git config --global core.editor <editor_name>
+	set default editor for git, e.g. editor_name = nano
+
+- git config --global push.default upstream
+	set push deault to upstream mode
+
+- git config --global merge.conflictstyle diff3
+	set diff3 as the style for merge conflict
+
+- git config --list
+	see all configuration list
+	config is stored in "~/.gitconfig" file
+	local config will be in repositories' ".git/config" file
