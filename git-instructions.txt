@@ -106,6 +106,12 @@ or
 - git merge <branch2> <branch1>
 	merge branch2 into branch1
 
+- git pull origin master = git fetch origin
+							+ git merge origin/master
+	git stores a offline version of remote master but not in the actual workspace
+	- git fetch origin updates this offline version of remote branch in the local
+	machine without affecting the workspace
+
 - git init
 	initialize a git repository in the current directory
 
