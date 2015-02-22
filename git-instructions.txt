@@ -113,7 +113,13 @@ or
 - git remote add <name> <repo-address>
 	for repos with only one remote, name is usually 'origin'
 	e.g. git remote add origin https://github.com/enlighter/reflections.git
-
+[git push origin master]
+[git pull origin master]
+			^		^
+			|		|
+		local		remote 
+		origin		master
+		
 - git clone <git-repository-address>
 	creates a copy (clone) of the repository at <git-repository-address>
 	in the current directory
