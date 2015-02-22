@@ -65,6 +65,38 @@ or
 	shows the difference between the contents of 'this commit' to its
 	parent commit, don't need to know the commit-id of the parent commit
 
+- git branch
+	shows the branches in the local repo
+
+- git branch <branch-label>
+	creates a new branch from the current activity pointer position, the
+	new branch being identified by <branch-label>
+
+- git branch -d <branch-label>
+	delete the label named <branch-label>, the commit in the branch remain.
+	do this after merging the <branch-label> branch to another branch, as all
+	the commits in this branch now are within the log the merged branch.
+	deletinig with this command without merging first renders all the commits
+	within this branch to become inaccessible, effectively discarding the whole
+	branch
+
+- git checkout <commit-id>
+	HEAD-less state, shifts the current activity pointer to the commit identified
+	by <commit-id>
+
+- git checkout <branch-label>
+	shift the current repository activity HEAD to the HEAD of the branch
+	identified by <branch-label>
+
+- git checkout -b <branch-label>
+	shortcut to create a new branch named <branch-label> from the current activity
+	position and shift HEAD to the HEAD of this new branch
+
+- branch merge
+- git checkout <branch1> [shift to branch1 HEAD]
+- git merge <branch2> <branch1>
+	merge branch2 into branch1
+
 - git init
 	initialize a git repository in the current directory
 
