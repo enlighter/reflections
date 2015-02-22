@@ -45,6 +45,9 @@ or
 	config is stored in "~/.gitconfig" file
 	local config will be in repositories' ".git/config" file
 
+- git config --global credential.helper 'cache --timeout=3600'
+	Set the cache to timeout after 1 hour (setting is in seconds)
+
 - git log -n 1
 	-n says log to show 'n' commits from the last commit
 	here n = 1
