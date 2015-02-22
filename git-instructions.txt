@@ -1,12 +1,26 @@
 To add new files/changes within an git repository folder:
 
-- git add .  [adds everything in the current folder n its subdirectories]
+- git add .  [adds everything in the current folder n its subdirectories
+				but doesn't add file deletions to the staging area, for
+				that '--all' needs to be done]
 or
 - git add .<path to file to be added>
+	'git add' adds the files to the staging area to be commited
+
+- git add --all
+	adds everything, even includes deletions made to the existing files
+	in the reposutory to the staging area
 
 - after add do - git commit -> then editor opens in which you add comment and save it
 or
 - git commit -m "<the comment>"
+	commits the current changes added to the staging area to the repository
+
+- git commit -a
+	shortcut to automatically add all the changes made inside files already
+	in repository and commit them.
+	doesn't add file deletions or additions to the staging-area/repository,
+	that needs to be manually added.
 
 - git push -u origin master
 	enter the login and pass for git account, -u being upstream mode
@@ -27,3 +41,7 @@ or
 	see all configuration list
 	config is stored in "~/.gitconfig" file
 	local config will be in repositories' ".git/config" file
+
+- git log -n 1
+	-n says log to show 'n' commits from the last commit
+	here n = 1
