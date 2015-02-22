@@ -60,6 +60,7 @@ or
 - git diff <commit-id1> <commit-id2>
 	shows the difference between the contents of commit2 compared to
 	commit1
+- git diff <branch1> <branch2>
 
 - git show <commit-id>
 	shows the difference between the contents of 'this commit' to its

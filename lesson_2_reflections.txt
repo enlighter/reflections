@@ -23,3 +23,7 @@ What is the result of merging two branches together? Why do we represent it in t
 
 	Merging two branches together creates a single branch (current checkout branch) containing the combined changes made by the parent branches. We represent it that way because the merge commit has the last commit from both the merging branches as parents.
 
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+	
+	Auto merging saves a lot of time and effort by merging two versions together, making it convinient and easier to merge two versions of code.
+	The auto merging used by git is 'logical' upto a level but not 'smart'.
