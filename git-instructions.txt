@@ -22,6 +22,9 @@ or
 	doesn't add file deletions or additions to the staging-area/repository,
 	that needs to be manually added.
 
+- git staatus
+	shows the current status of the current directory and the staging area
+
 - git push -u origin master
 	enter the login and pass for git account, -u being upstream mode
 
@@ -45,3 +48,26 @@ or
 - git log -n 1
 	-n says log to show 'n' commits from the last commit
 	here n = 1
+
+- git diff
+	shows the difference between current file contents to the 
+	contents of the staging area
+
+- git diff --staged
+	shows the difference between file contents in the staging area
+	to the contents of the last commit
+
+- git diff <commit-id1> <commit-id2>
+	shows the difference between the contents of commit2 compared to
+	commit1
+
+- git show <commit-id>
+	shows the difference between the contents of 'this commit' to its
+	parent commit, don't need to know the commit-id of the parent commit
+
+- git init
+	initialize a git repository in the current directory
+
+- git clone <git-repository-address>
+	creates a copy (clone) of the repository at <git-repository-address>
+	in the current directory
