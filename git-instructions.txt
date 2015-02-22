@@ -96,6 +96,11 @@ or
 	shortcut to create a new branch named <branch-label> from the current activity
 	position and shift HEAD to the HEAD of this new branch
 
+- git reset
+	reset to a previous state
+- git reset --hard
+	hard reset, discards changes irrespective of other considerations
+
 - branch merge
 - git checkout <branch1> [shift to branch1 HEAD]
 - git merge <branch2> <branch1>
@@ -119,7 +124,7 @@ or
 			|		|
 		local		remote 
 		origin		master
-		
+
 - git clone <git-repository-address>
 	creates a copy (clone) of the repository at <git-repository-address>
 	in the current directory
