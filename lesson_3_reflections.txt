@@ -35,7 +35,11 @@ stored locally?
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    Using a normal cloud service like dropbox. It would be more inefficient that way, as merges would
+    have to be done manually, also would probably need to store multiple versions of same file thus
+    taking up more space.
+    Since syncing would be automatic, sync between the collaborators wwould be easier. But modifications
+    to the files would be harder.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
