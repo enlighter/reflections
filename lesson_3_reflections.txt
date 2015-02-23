@@ -44,4 +44,8 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    When you need to keep the master intact and add changes only when they have been vetted and approved
+    so that the master branch remains in a pristine condition always.
+    Doing changes directly to the master branch would be faster and less cumbersome, but that would also
+    increase the changes of a broken/error prone master branch. Also the vetting/approval process would
+    be inadequate in the second case.
