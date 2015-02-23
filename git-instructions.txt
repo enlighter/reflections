@@ -47,6 +47,8 @@ or
 
 - git config --global credential.helper 'cache --timeout=3600'
 	Set the cache to timeout after 1 hour (setting is in seconds)
+	- git config --global --unset credential.helper
+	unsetting the setting
 
 - git log -n 1
 	-n says log to show 'n' commits from the last commit
@@ -107,10 +109,13 @@ or
 	merge branch2 into branch1
 
 - git pull origin master = git fetch origin
-							+ git merge origin/master
+							+ git merge master origin/master
 	git stores a offline version of remote master but not in the actual workspace
 	- git fetch origin updates this offline version of remote branch in the local
 	machine without affecting the workspace
+	(after fetch but before merge)
+	[git log origin/master]
+	[git diff origin/master master]
 
 - git init
 	initialize a git repository in the current directory
