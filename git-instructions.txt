@@ -136,6 +136,49 @@ or
 		local		remote 
 		origin		master
 
+- git remote show <remote-name>
+	e.g. git reote show 
+	sample output:
+
+* remote origin
+  Fetch URL: https://github.com/enlighter/sirius.git
+  Push  URL: https://github.com/enlighter/sirius.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+
+* remote origin
+  URL: https://github.com/my-org/complex-project
+  Fetch URL: https://github.com/my-org/complex-project
+  Push  URL: https://github.com/my-org/complex-project
+  HEAD branch: master
+  Remote branches:
+    master                           tracked
+    dev-branch                       tracked
+    markdown-strip                   tracked
+    issue-43                         new (next fetch will store in remotes/origin)
+    issue-45                         new (next fetch will store in remotes/origin)
+    refs/remotes/origin/issue-11     stale (use 'git remote prune' to remove)
+  Local branches configured for 'git pull':
+    dev-branch merges with remote dev-branch
+    master     merges with remote master
+  Local refs configured for 'git push':
+    dev-branch                     pushes to dev-branch                     (up to date)
+    markdown-strip                 pushes to markdown-strip                 (up to date)
+    master                         pushes to master                         (up to date)
+
+- git remote rename <old-remote-name> <new-remote-name>
+	renames a remote's refernce shortname
+	e.g. git remote rename pb paul
+	also, what used to be referenced at pb/master is now at paul/master
+
+- git remote rm <remote-name>
+	remove a remote
+
 - git clone <git-repository-address>
 	creates a copy (clone) of the repository at <git-repository-address>
 	in the current directory
