@@ -28,7 +28,7 @@ or
 - git push -u origin master
 	enter the login and pass for git account, -u being upstream mode
 
-- git config --global color.ui default
+- git config --global color.ui auto
 	gives a color diff
 
 - git config --global core.editor <editor_name>
