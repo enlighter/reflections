@@ -22,7 +22,7 @@ or
 	doesn't add file deletions or additions to the staging-area/repository,
 	that needs to be manually added.
 
-- git staatus
+- git status
 	shows the current status of the current directory and the staging area
 
 - git push -u origin master
