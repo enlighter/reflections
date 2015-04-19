@@ -189,3 +189,7 @@ or
 - git clone <git-repository-address>
 	creates a copy (clone) of the repository at <git-repository-address>
 	in the current directory
+
+- Pull and update submodules
+- git submodule foreach git pull
+- git submodule update --recursive
