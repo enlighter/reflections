@@ -57,6 +57,9 @@ or
 	- git config --global --unset credential.helper
 	unsetting the setting
 
+- git config --global url.https://github.com/.insteadOf git://github.com/
+	To bypass proxy blocking of 'git' port
+
 - git log -n 1
 	-n says log to show 'n' commits from the last commit
 	here n = 1
