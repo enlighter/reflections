@@ -32,3 +32,12 @@ Undo published commits with new commits:
 	# Then commit. Be sure and write a good message describing what you just did
 	git commit
 )
+
+Git submodules:
+# If you don’t want to type --submodule every time you run git diff, you can set it as the default format by setting the diff.submodule config value to “log”.
+- git config --global diff.submodule log
+# If you prefer to not manually fetch and merge in the subdirectory. If you run git submodule update --remote, Git will go into your submodules and fetch and update for you.
+- git submodule update --remote <submodule-name>
+	This command will by default assume that you want to update the checkout to the master branch of the submodule repository
+# Git will also show you a short summary of changes to your submodules:
+- git config --global status.submodulesummary 1
