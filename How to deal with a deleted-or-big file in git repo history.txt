@@ -1,0 +1,42 @@
+Q. 
+Once upon a time, there was a file in my project that I would now like to be able to get.
+The problem is I have no idea of when have I deleted it and on which path is was at.
+How can I locate the commits of this file when it existed?
+
+A.
+If you do not know the exact path you may use
+git log --all -- **/thefile.*
+If you know the path the file was at, you can do this:
+git log --all -- <path-to-file>
+This should show a list of commits in all branches which touched that file. Then, you can find the version of the file you want, and display it with...
+git show <SHA> -- <path-to-file>
+(or restore it into your working copy with git checkout <SHA> -- <path-to-file>)
+
+Q.
+Remove large or troublesome files from git repo history
+
+A.
+First clone a fresh copy of your repo, using the --mirror flag:
+
+$ git clone --mirror git://example.com/some-big-repo.git
+
+This is a bare repo, which means your normal files won't be visible, but it is a full copy of the Git database of your repository, and at this point you 
+should make a backup of it to ensure you don't lose anything.
+Now you can run the BFG to clean your repository up:
+
+$ java -jar bfg.jar --strip-blobs-bigger-than 100M some-big-repo.git
+
+The BFG will update your commits and all branches and tags so they are clean, but it doesn't physically delete the unwanted stuff. 
+Examine the repo to make sure your history has been updated, and then use the standard git gc command to strip out the unwanted dirty data, 
+which Git will now recognise as surplus to requirements:
+
+$ cd some-big-repo.git
+$ git reflog expire --expire=now --all && git gc --prune=now --aggressive
+
+Finally, once you're happy with the updated state of your repo, push it back up (note that because your clone command used the --mirror flag, this 
+push will update all refs on your remote server):
+
+$ git push
+
+At this point, you're ready for everyone to ditch their old copies of the repo and do fresh clones of the nice, new pristine data. It's best 
+to delete all old clones, as they'll have dirty history that you don't want to risk pushing back into your newly cleaned repo. 
