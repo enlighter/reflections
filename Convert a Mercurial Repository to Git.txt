@@ -1,0 +1,8 @@
+Did the following on my Mac to successfully export a Mercurial repo to Git (with full branches):
+
+mkdir myrepo; cd myrepo;
+git clone https://github.com/frej/fast-export.git
+rm -rfv .git .gitignore
+git init
+./hg-fast-export.sh -r ../path/to/local/hg/repo
+git clean -f # remove fast-export files
