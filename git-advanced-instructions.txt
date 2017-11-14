@@ -22,6 +22,8 @@ Add only modified changes and ignore untracked files:
 # You can also do git commit -a to commit only the modified and deleted files.
 - or, git commit -a
 
+Add only added or modified files in <path>, ignoring any deletions within <path>:
+- git add --ignore-removal <path>
 
 Undo published commits with new commits:
 	On the other hand, if you've published the work, you probably don't want to reset the branch, since that's effectively rewriting history. In that case, you could indeed revert the commits. With Git, revert has a very specific meaning: create a commit with the reverse patch to cancel it out. This way you don't rewrite any history.
