@@ -15,6 +15,14 @@ Hard delete unpublished commits:
 # You could get merge conflicts, if you've modified things which were
 # changed since the commit you reset to.
 
+Add only modified changes and ignore untracked files:
+	If you have modifications to tracked files and also several new untracked files, you can add only the modifications to tracked files without adding the new untracked files:
+# You can do git add -u so that it will stage the modified and deleted files.
+- git add -u
+# You can also do git commit -a to commit only the modified and deleted files.
+- or, git commit -a
+
+
 Undo published commits with new commits:
 	On the other hand, if you've published the work, you probably don't want to reset the branch, since that's effectively rewriting history. In that case, you could indeed revert the commits. With Git, revert has a very specific meaning: create a commit with the reverse patch to cancel it out. This way you don't rewrite any history.
 # This will create three separate revert commits:
