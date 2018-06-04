@@ -108,6 +108,9 @@ or
 	shortcut to create a new branch named <branch-label> from the current activity
 	position and shift HEAD to the HEAD of this new branch
 
+- git checkout --track <remote-repo>/<branch-name>
+	local branch branch checkout of remote branch
+
 - git reset
 	reset to a previous state
 - git reset --hard
