@@ -2,6 +2,8 @@ Git show files that were changed in the last n days:
 - git log --pretty=format: --name-only --since="<n> days ago" [e.g. "4 days ago"]
 # if some files duplicate in multiple commits, you can use pipe to filter it
 - git log --pretty=format: --name-only --since="2 days ago" | sort | uniq
+# Same thing even more succint with stats for the changes
+- git diff --stat @{<n>.days.ago}
 
 Git show log for last n days with filenames listed for each file modified in each commit
 - git log --name-status --since="<n> days ago"
